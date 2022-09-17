@@ -1,14 +1,14 @@
 package com.layer.demo.web;
 
+import com.layer.demo.bo.UserBO;
+import com.layer.demo.service.UserService;
+import com.layer.demo.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.layer.demo.api.UserService;
-import com.layer.demo.api.model.UserModel;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
@@ -27,10 +27,14 @@ public class UserController {
 
     @RequestMapping("/add")
     @ResponseBody
-    public UserModel addUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
-        UserModel user = new UserModel();
+    public UserVO addUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
+        UserBO user = new UserBO();
         user.setName(name);
         user.setAge(age);
-        return userService.addUser(user);
+        UserBO userBO = userService.addUser(user);
+        UserVO userVO = new UserVO();
+        userVO.setName(userBO.getName());
+        userVO.setAge(userBO.getAge());
+        return userVO;
     }
 }

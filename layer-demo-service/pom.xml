@@ -21,6 +21,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>com.layer.demo</groupId>
             <artifactId>layer-demo-api-dto</artifactId>
             <version>${project.version}</version>
@@ -40,11 +50,7 @@
             <artifactId>layer-demo-core</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.6</version>
-        </dependency>
+
 
     </dependencies>
 

@@ -1,7 +1,9 @@
 # 工程简介
 
 ## Jackson
+
 ### Jackson简介
+
 这个工程基于常见的MVC架构，展示了Jackson（the Java JSON library）的使用。学习这个工程之前，需要同学们对MVC有一定的了解。
 
 ### Jackson工程解读
@@ -37,7 +39,6 @@
 
 11 directories, 15 files
 ```
-
 
 # 延伸阅读
 

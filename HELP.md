@@ -1,6 +1,7 @@
 # Getting Started
 
 ### Reference Documentation
+
 For further reference, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
@@ -13,6 +14,7 @@ For further reference, please consider the following sections:
 * [Spring Data Reactive Redis](https://docs.spring.io/spring-boot/docs/2.3.7.RELEASE/reference/htmlsingle/#boot-features-redis)
 
 ### Guides
+
 The following guides illustrate how to use some features concretely:
 
 * [《阿里巴巴Java开发手册》](https://github.com/alibaba/p3c)
