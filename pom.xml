@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.fflow</groupId>
+    <groupId>com.layer.demo</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,12 +17,13 @@
     </properties>
 
     <modules>
-        <module>demo-api</module>
-        <module>demo-dao</module>
-        <module>demo-manager</module>
-        <module>demo-service</module>
-        <module>demo-web</module>
-        <module>start</module>
+        <module>layer-demo-api-dto</module>
+        <module>layer-demo-api-enum</module>
+        <module>layer-demo-api-provider</module>
+        <module>layer-demo-provider</module>
+        <module>layer-demo-core</module>
+        <module>layer-demo-service</module>
+        <module>layer-demo-web</module>
     </modules>
 
     <dependencyManagement>
