@@ -1,8 +1,10 @@
 package com.layer.demo.web;
 
+import com.layer.demo.api.dto.AddUserReqDTO;
+import com.layer.demo.api.dto.AddUserRspDTO;
+import com.layer.demo.core.converter.UserConverter;
 import com.layer.demo.core.model.bo.UserBO;
 import com.layer.demo.service.UserService;
-import com.layer.demo.web.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,14 +29,14 @@ public class UserController {
 
     @RequestMapping("/add")
     @ResponseBody
-    public UserVO addUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
-        UserBO user = new UserBO();
+    public AddUserRspDTO addUser(@RequestParam("name") String name, @RequestParam("age") Integer age) {
+        AddUserReqDTO user = new AddUserReqDTO();
         user.setName(name);
         user.setAge(age);
-        UserBO userBO = userService.addUser(user);
-        UserVO userVO = new UserVO();
-        userVO.setName(userBO.getName());
-        userVO.setAge(userBO.getAge());
-        return userVO;
+        UserBO userBO = userService.addUser(UserConverter.INSTANCE.dtoToBO(user));
+        AddUserRspDTO userRspDTO = new AddUserRspDTO();
+        userRspDTO.setName(userBO.getName());
+        userRspDTO.setAge(userBO.getAge());
+        return userRspDTO;
     }
 }
