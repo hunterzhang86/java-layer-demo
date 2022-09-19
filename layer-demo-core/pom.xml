@@ -30,6 +30,10 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.layer.demo</groupId>
             <artifactId>layer-demo-api-dto</artifactId>
             <version>${project.version}</version>

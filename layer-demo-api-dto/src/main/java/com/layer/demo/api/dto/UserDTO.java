@@ -1,4 +1,4 @@
-package com.layer.demo.dto;
+package com.layer.demo.api.dto;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
-package com.layer.demo.api;
+package com.layer.demo.api.provider;
 
 
-import com.layer.demo.dto.UserDTO;
+import com.layer.demo.api.dto.UserDTO;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>

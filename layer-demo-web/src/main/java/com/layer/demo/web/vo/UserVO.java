@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.layer.demo.vo;
+package com.layer.demo.web.vo;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>

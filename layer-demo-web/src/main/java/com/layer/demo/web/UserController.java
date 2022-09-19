@@ -2,7 +2,7 @@ package com.layer.demo.web;
 
 import com.layer.demo.bo.UserBO;
 import com.layer.demo.service.UserService;
-import com.layer.demo.vo.UserVO;
+import com.layer.demo.web.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;

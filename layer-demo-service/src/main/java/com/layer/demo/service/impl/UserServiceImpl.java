@@ -1,8 +1,8 @@
 package com.layer.demo.service.impl;
 
 import com.layer.demo.bo.UserBO;
-import com.layer.demo.dao.dataobject.UserDO;
-import com.layer.demo.dao.mapper.UserMapper;
+import com.layer.demo.core.dao.dataobject.UserDO;
+import com.layer.demo.core.dao.mapper.UserMapper;
 import com.layer.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.beans.BeanCopier;
