@@ -1,4 +1,4 @@
-package com.layer.demo.core.dao.dataobject;
+package com.layer.demo.core.model.dataobject;
 
 import lombok.Data;
 

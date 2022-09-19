@@ -1,4 +1,4 @@
-package com.layer.demo.core.bo;
+package com.layer.demo.core.model.bo;
 
 import lombok.Data;
 

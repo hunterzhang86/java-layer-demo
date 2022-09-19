@@ -1,6 +1,6 @@
-package com.layer.demo.core.dao.mapper;
+package com.layer.demo.core.dao;
 
-import com.layer.demo.core.dao.dataobject.UserDO;
+import com.layer.demo.core.model.dataobject.UserDO;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -6,7 +6,7 @@ import lombok.Data;
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
 @Data
-public class UserDTO {
+public class AddUserRspDTO {
     private Long id;
 
     private String name;

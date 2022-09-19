@@ -1,6 +1,7 @@
 package com.layer.demo.provider;
 
-import com.layer.demo.api.dto.UserDTO;
+import com.layer.demo.api.dto.AddUserReqDTO;
+import com.layer.demo.api.dto.AddUserRspDTO;
 import com.layer.demo.api.provider.UserService;
 
 /**
@@ -15,7 +16,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDTO addUser(UserDTO user) {
+    public AddUserRspDTO addUser(AddUserReqDTO user) {
         return null;
     }
 }

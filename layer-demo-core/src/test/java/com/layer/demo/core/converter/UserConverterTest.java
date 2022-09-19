@@ -1,9 +1,9 @@
 package com.layer.demo.core.converter;
 
 
-import com.layer.demo.api.dto.UserDTO;
-import com.layer.demo.core.bo.UserBO;
-import com.layer.demo.core.dao.dataobject.UserDO;
+import com.layer.demo.api.dto.AddUserReqDTO;
+import com.layer.demo.core.model.bo.UserBO;
+import com.layer.demo.core.model.dataobject.UserDO;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -23,7 +23,7 @@ public class UserConverterTest {
 
     @Test
     public void testDTOtoBO() {
-        UserDTO userDTO = new UserDTO();
+        AddUserReqDTO userDTO = new AddUserReqDTO();
         userDTO.setName("boo");
         userDTO.setId(100L);
         userDTO.setAge(18);

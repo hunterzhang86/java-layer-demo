@@ -16,7 +16,7 @@
 
 package com.layer.demo.web;
 
-import com.layer.demo.api.dto.UserDTO;
+import com.layer.demo.api.dto.AddUserReqDTO;
 import com.layer.demo.web.vo.UserVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -50,7 +50,7 @@ public class BasicController {
     // http://127.0.0.1:8080/save_user?name=newName&age=11
     @RequestMapping("/save_user")
     @ResponseBody
-    public String saveUser(UserDTO u) {
+    public String saveUser(AddUserReqDTO u) {
         return "user will save: name=" + u.getName() + ", age=" + u.getAge();
     }
 
@@ -62,7 +62,7 @@ public class BasicController {
 
     @ModelAttribute
     public void parseUser(@RequestParam(name = "name", defaultValue = "unknown user") String name
-            , @RequestParam(name = "age", defaultValue = "12") Integer age, UserDTO user) {
+            , @RequestParam(name = "age", defaultValue = "12") Integer age, AddUserReqDTO user) {
         user.setName("zhangsan");
         user.setAge(18);
     }
