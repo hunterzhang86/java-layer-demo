@@ -1,9 +1,9 @@
 package com.layer.demo.core.converter;
 
+import com.layer.demo.api.dto.UserDTO;
 import com.layer.demo.core.bo.UserBO;
 import com.layer.demo.core.dao.dataobject.UserDO;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 /**
@@ -22,5 +22,13 @@ public interface UserConverter {
      * @return BO
      */
     UserBO doToBO(UserDO source);
+
+    /**
+     * 转换
+     *
+     * @param source DTO
+     * @return BO
+     */
+    UserBO dtoToBO(UserDTO source);
 }
 
