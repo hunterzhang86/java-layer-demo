@@ -1,6 +1,6 @@
 package com.layer.demo.web;
 
-import com.layer.demo.bo.UserBO;
+import com.layer.demo.core.bo.UserBO;
 import com.layer.demo.service.UserService;
 import com.layer.demo.web.vo.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;

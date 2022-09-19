@@ -1,4 +1,4 @@
-package com.layer.demo.bo;
+package com.layer.demo.core.bo;
 
 import lombok.Data;
 
@@ -12,5 +12,4 @@ public class UserBO {
     private String name;
 
     private Integer age;
-
 }

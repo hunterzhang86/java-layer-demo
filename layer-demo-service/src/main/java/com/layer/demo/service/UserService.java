@@ -1,7 +1,7 @@
 package com.layer.demo.service;
 
 
-import com.layer.demo.bo.UserBO;
+import com.layer.demo.core.bo.UserBO;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
