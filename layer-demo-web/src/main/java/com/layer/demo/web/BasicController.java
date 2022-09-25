@@ -17,7 +17,6 @@
 package com.layer.demo.web;
 
 import com.layer.demo.api.dto.AddUserReqDTO;
-import com.layer.demo.web.vo.UserVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,16 +34,6 @@ public class BasicController {
     @ResponseBody
     public String hello(@RequestParam(name = "name", defaultValue = "unknown user") String name) {
         return "Hello " + name;
-    }
-
-    // http://127.0.0.1:8080/user
-    @RequestMapping("/user")
-    @ResponseBody
-    public UserVO user() {
-        UserVO user = new UserVO();
-        user.setName("theonefx");
-        user.setAge(666);
-        return user;
     }
 
     // http://127.0.0.1:8080/save_user?name=newName&age=11
