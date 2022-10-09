@@ -148,4 +148,4 @@ public void testMockMapper() {
 
 
 # 结论
-以上代码都可以在 [powermock-demo](https://git.hrlyit.com/zhanghuan2/java-layer-demo/-/blob/master/layer-demo-service/src/test/java/com/layer/demo/service/impl/UserServiceImplTest.java) 中找到。
+以上代码都可以在 [powermock-demo](https://github.com/hunterzhang86/java-layer-demo/blob/master/layer-demo-service/src/test/java/com/layer/demo/service/impl/UserServiceImplTest.java) 中找到。
