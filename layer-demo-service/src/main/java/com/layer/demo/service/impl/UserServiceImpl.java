@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
 @Component
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends BaseUserService implements UserService {
 
     @Autowired
     private UserMapper userMapper;
@@ -33,5 +33,55 @@ public class UserServiceImpl implements UserService {
         Long id = userMapper.insert(userDO);
         user.setId(id);
         return user;
+    }
+
+    @Override
+    public String mockPublicMethod(UserBO user) {
+        return publicMethod(user);
+    }
+
+    public String publicMethod(UserBO user) {
+        throw new UnsupportedOperationException("mockPublicMethod");
+    }
+
+    @Override
+    public String mockFinalPublicMethod(UserBO user) {
+        return finalPublicMethod(user);
+    }
+
+    public final String finalPublicMethod(UserBO user) {
+        throw new UnsupportedOperationException("mockFinalPublicMethod");
+    }
+
+    @Override
+    public String mockPrivateMethod(UserBO user) {
+        return privateMethod(user);
+    }
+
+    private String privateMethod(UserBO user) {
+        throw new UnsupportedOperationException("mockPrivateMethod");
+    }
+
+    @Override
+    public String mockPublicStaticMethod(UserBO user) {
+        return publicStaticMethod(user);
+    }
+
+    public static String publicStaticMethod(UserBO user) {
+        throw new UnsupportedOperationException("mockPublicStaticMethod");
+    }
+
+    @Override
+    public String mockPrivateStaticMethod(UserBO user) {
+        return privateStaticMethod(user);
+    }
+
+    private static String privateStaticMethod(UserBO user) {
+        throw new UnsupportedOperationException("mockPrivateStaticMethod");
+    }
+
+    @Override
+    public String mockParentMethod(UserBO user) {
+        return parentMethod(user);
     }
 }
